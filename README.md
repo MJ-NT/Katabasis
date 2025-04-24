@@ -13,7 +13,8 @@ In it, the player character takes on the role of a ‘visitant’, a being stole
 
 I created the game as my final project for Harvard's CS50 course.
 
-The backend is powered by Flask, with a SQLite database to store user data and game state. The frontend is built with HTML, CSS, and JavaScript, using Bootstrap for styling and layout.
+The backend is powered by Flask, with a SQLite database to store user data and game state.
+The frontend is built with HTML, CSS, and JavaScript, using Bootstrap for styling and layout.
 
 ## Background and creative process
 
@@ -203,4 +204,10 @@ This is the page that the `/challenge` route renders if the user’s menace reac
 ### register.html
 
 This page contains a form in which new users can register by providing a username, a password, and a confirmation of that password.
+
+## Copyright and Credits
+
+This game was written and designed by Matt Taylor.
+It is a work of fan fiction based on Harry Tuffs' _A House of Many Doors_ and is not intended for commercial use.
+All rights to the original game and its characters, settings, and lore are owned by Harry Tuffs.
 
