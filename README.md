@@ -42,7 +42,11 @@ Finally, I abstracted away health, sanity, or other named ‘threat level’ sta
 
 I settled on a ‘branch-and-bottleneck’ approach to this ‘choose-your-own-adventure’-style narrative, with occasional story-ending decisions similar to a ‘gauntlet’ structure. The player’s ‘story state’ denotes their progress within the story, and each challenge is associated with a particular story state.
 
+![A diagram of a branch-and-bottleneck story structure.](https://emshort.blog/wp-content/uploads/2019/11/branchbottleneck.jpg?w=768)
+
 ‘Storylets’ are pieces of content that have prerequisites determining when they can play and have an effect on the world state after playing them. If you are interested in reading more about the uses of storylets, Emily Short gives a more comprehensive overview [here](https://emshort.blog/2019/11/29/storylets-you-want-them/).
+
+![A diagram of a branch-and-bottleneck story structure using storylets, with example ending storylets labelled 'Revenge', 'Love' and 'Prison'](https://emshort.blog/wp-content/uploads/2019/11/bb-storylets-2.jpg)
 
 I debated using a bank of storylets (i.e. a list of challenges) associated with the same story state (or alternatively a given range of story states), and implementing code that would fire a random challenge from this list when the player state was equal to that state (or within that range). Story state would then be increased to a new level with a new bank of associated storylets. Instead, I opted for a more traditional narrative-branching structure, still using storylets, with each storylet’s story state being unique but returning the player to bottleneck storylets with milestone story state values.
 
