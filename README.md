@@ -157,7 +157,7 @@ Among other features:
 - I added pseudo-classes to buttons, the nav-bar links, and ‘about’ page hyperlinks to make the pages more dynamic and tonally consistent.
 - I added a fade-in class to the challenges to fade in content using the `@keyframes` rule.
 - I implemented a `.prelanding` class to create a smaller container box around the account, login and register forms that would change size dynamically with the content within.
-- I created a sticky footer using:
+- I created a fixed footer using:
 . Bootstrap’s `flex-grow-1` on the container class for `<main>` (which grows the container to take up all available space, pushing the footer down if there is not enough content to do so naturally).
 . Bootstrap’s `mt-auto` for the footer (which pushes the footer down to the bottom when the content is shorter than the screen height).
 . I added `display: flex` to the body, turning it into a flex container. Also `flex-column`, which changes the flex direction to be vertical, so the content and footer are stacked vertically.
